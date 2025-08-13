@@ -11,8 +11,9 @@ This is the official web portal for the StegoShark application, developed as par
 **Main Application**: Functional executable (Python)
 
 ## Access Points
-**Main application repository**:[GitHub](https://github.com/XYFrank103/StegoShark)
-**Live demo**:[Live Demo](https://xyfrank103.github.io/StegoShark-Web/)
+**Main application repository**: [GitHub](https://github.com/XYFrank103/StegoShark)
+
+**Homepage**: [Homepage](https://xyfrank103.github.io/StegoShark-Web/)
 
 
 
@@ -21,3 +22,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 Zekai Yin (for academic coursework, PSB7030CE Cyber Security Individual Project)
+
