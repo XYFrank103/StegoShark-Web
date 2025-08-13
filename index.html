@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StegoShark - Home</title>
+
+  <link rel="icon" href="./images/main.ico" type="image/x-icon">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #121212;
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #1e1e1e;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+    .nav-left img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    .nav-left span {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .nav-right a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s ease-in-out;
+    }
+    .nav-right a:hover {
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #fff;
+    }
+    h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+    }
+    h3 {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .feature-box {
+      flex: 1 1 45%;
+      background: #1e1e1e;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .category-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;  
+      margin-top: 40px;
+      margin-bottom: 15px;
+      border-left: 5px solid #555; 
+      padding-left: 10px;
+    }
+
+    .usage-item {
+      background: #1e1e1e;
+      margin-bottom: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    .usage-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .usage-content img {
+      width: 450px;      
+      max-width: 100%;
+      border-radius: 8px;
+      margin-right: 20px;
+      margin-bottom: 15px;
+    }
+    .usage-content .desc {
+      flex: 1;
+      min-width: 250px;
+    }
+    .usage-content ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    .usage-content ul li {
+      margin-bottom: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background: #1e1e1e;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">
+      <img src="./images/main.png" alt="StegoShark Logo">
+      <span>StegoShark</span>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="https://github.com/XYFrank103/StegoShark/releases">Download</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome to StegoShark</h1>
+    <p>StegoShark is a tool for Image & Audio Steganography and digital signatures.</p>
+
+    <h2>Introduction</h2>
+    <p>
+      StegoShark allows you to securely hide and extract text or files within images and audio files. 
+      It supports AES-128 and AES-256 encryption, ensuring confidentiality of hidden data. 
+      Additionally, it provides digital signature generation and verification to ensure data authenticity.
+    </p>
+
+    <h2>Overview</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>Image Steganography</h3>
+        <p>Hide and extract text or data inside PNG, BMP, TIFF, JPG, JPEG, and GIF images.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Audio Steganography</h3>
+        <p>Hide and extract text or data within WAV audio files with encryption.</p>
+      </div>
+      <div class="feature-box">
+        <h3>AES Encryption</h3>
+        <p>Supports AES-128 and AES-256 to securely protect hidden data.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Digital Signature</h3>
+        <p>Generate and verify digital signatures to ensure file integrity.</p>
+      </div>
+    </div>
+
+    <h2>Usage</h2>
+
+    <h2 class="category-title">Text Hiding in Image</h2>
+
+    <div class="usage-item">
+      <h3>Hide Text in Image</h3>
+      <div class="usage-content">
+        <img src="./images/hide_text_image.png" alt="Hide Text in Image">
+        <div class="desc">
+          <p>Securely hide secret text within an image using AES-128/256 encryption. Supports multiple image formats.</p>
+          <ul>
+            <li><strong>Step 1:</strong> Enter the text you want to hide.</li>
+            <li><strong>Step 2:</strong> Select a cover image (PNG, BMP, TIFF, JPG, etc.).</li>
+            <li><strong>Step 3:</strong> Choose AES-128 or AES-256 encryption.</li>
+            <li><strong>Step 4:</strong> Set and confirm your password.</li>
+            <li><strong>Step 5:</strong> Save the generated stego image.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="usage-item">
+      <h3>Extract Text from Image</h3>
+      <div class="usage-content">
+        <img src="./images/extract_text_image.png" alt="Extract Text from Image">
+        <div class="desc">
+          <p>Retrieve hidden text from a stego image by entering the correct password.</p>
+          <ul>
+            <li><strong>Step 1:</strong> Select the stego image containing hidden text.</li>
+            <li><strong>Step 2:</strong> Enter the correct password.</li>
+            <li><strong>Step 3:</strong> Click "Extract" to reveal the hidden text.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="category-title">Data Hiding in Image</h2>
+
+    <div class="usage-item">
+      <h3>Hide Data in Image</h3>
+      <div class="usage-content">
+        <img src="./images/hide_data_image.png" alt="Hide Data in Image">
+        <div class="desc">
+          <p>Embed any file (documents, archives, etc.) inside an image with AES encryption.</p>
+          <ul>
+            <li><strong>Step 1:</strong> Choose the file you want to hide.</li>
+            <li><strong>Step 2:</strong> Select a cover image (PNG, BMP, etc.).</li>
+            <li><strong>Step 3:</strong> Pick AES-128 or AES-256 encryption.</li>
+            <li><strong>Step 4:</strong> Enter and confirm your password.</li>
+            <li><strong>Step 5:</strong> Save the generated stego image.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="usage-item">
+      <h3>Extract Data from Image</h3>
+      <div class="usage-content">
+        <img src="./images/extract_data_image.png" alt="Extract Data from Image">
+        <div class="desc">
+          <p>Recover hidden files from a stego image and restore the original format.</p>
+          <ul>
+            <li><strong>Step 1:</strong> Select the stego image containing hidden data.</li>
+            <li><strong>Step 2:</strong> Enter the correct password.</li>
+            <li><strong>Step 3:</strong> Choose the destination folder.</li>
+            <li><strong>Step 4:</strong> Click "Extract" to recover the file.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="category-title">Text Hiding in Audio</h2>
+
+    <div class="usage-item">
+      <h3>Hide Text in Audio</h3>
+      <div class="usage-content">
+        <img src="./images/hide_text_audio.png" alt="Hide Text in Audio">
+        <div class="desc">
+          <p>Conceal secret text inside WAV audio files with password protection.</p>
+          <ul>
+            <li><strong>Step 1:</strong> Enter the text you want to hide.</li>
+            <li><strong>Step 2:</strong> Select a WAV audio file as cover.</li>
+            <li><strong>Step 3:</strong> Set a password for encryption.</li>
+            <li><strong>Step 4:</strong> Save the stego audio file.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="usage-item">
+      <h3>Extract Text from Audio</h3>
+      <div class="usage-content">
+        <img src="./images/extract_text_audio.png" alt="Extract Text from Audio">
+        <div class="desc">
+          <p>Retrieve hidden text from a stego audio file using the correct password.</p>
+          <ul>
+            <li><strong>Step 1:</strong> Select the stego WAV audio file.</li>
+            <li><strong>Step 2:</strong> Enter the correct password.</li>
+            <li><strong>Step 3:</strong> Click "Extract" to reveal the hidden text.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="category-title">Data Hiding in Audio</h2>
+
+    <div class="usage-item">
+      <h3>Hide Data in Audio</h3>
+      <div class="usage-content">
+        <img src="./images/hide_data_audio.png" alt="Hide Data in Audio">
+        <div class="desc">
+          <p>Hide any file inside a WAV audio file with AES-128/256 encryption.</p>
+          <ul>
+            <li><strong>Step 1:</strong> Choose the file you want to hide.</li>
+            <li><strong>Step 2:</strong> Select a WAV audio file as cover.</li>
+            <li><strong>Step 3:</strong> Pick AES-128 or AES-256 encryption.</li>
+            <li><strong>Step 4:</strong> Enter and confirm your password.</li>
+            <li><strong>Step 5:</strong> Save the stego audio file.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="usage-item">
+      <h3>Extract Data from Audio</h3>
+      <div class="usage-content">
+        <img src="./images/extract_data_audio.png" alt="Extract Data from Audio">
+        <div class="desc">
+          <p>Recover hidden files from a stego audio file and restore the original data.</p>
+          <ul>
+            <li><strong>Step 1:</strong> Select the stego WAV audio file.</li>
+            <li><strong>Step 2:</strong> Enter the correct password.</li>
+            <li><strong>Step 3:</strong> Choose where to save the extracted file.</li>
+            <li><strong>Step 4:</strong> Click "Extract" to recover the file.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="category-title">Digital Signature</h2>
+
+    <div class="usage-item">
+      <h3>Signature Generation</h3>
+      <div class="usage-content">
+        <img src="./images/generate_signature.png" alt="Generate Digital Signature">
+        <div class="desc">
+          <p>Sign a file using RSA-SHA256 to ensure authenticity and integrity.</p>
+          <ul>
+            <li><strong>Step 1:</strong> Select the file you want to sign.</li>
+            <li><strong>Step 2:</strong> Ensure RSA keys are generated.</li>
+            <li><strong>Step 3:</strong> Click "Generate Signature".</li>
+            <li><strong>Step 4:</strong> Save the generated .sig file.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="usage-item">
+      <h3>Signature Verification</h3>
+      <div class="usage-content">
+        <img src="./images/verify_signature.png" alt="Verify Digital Signature">
+        <div class="desc">
+          <p>Verify if a file's digital signature is valid and untampered.</p>
+          <ul>
+            <li><strong>Step 1:</strong> Select the original file.</li>
+            <li><strong>Step 2:</strong> Select the corresponding .sig signature file.</li>
+            <li><strong>Step 3:</strong> Click "Verify".</li>
+            <li><strong>Step 4:</strong> The result will show valid or tampered.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    StegoShark © 2025
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StegoShark - Concepts</title>
+  <link rel="icon" href="./images/main.ico" type="image/x-icon">
+  <style>
+    html {
+      overflow-y: scroll;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #121212;
+      color: #eee;
+      line-height: 1.8;
+    }
+
+    nav {
+      background: #1e1e1e;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .nav-left span {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .nav-right a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-right a:hover {
+      color: #aaa;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-top: 40px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 17px;
+      color: #ddd;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: #fff;
+    }
+
+    a {
+      color: #4fa3f7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background: #1e1e1e;
+      color: #aaa;
+    }
+
+    a.external-link {
+            color: #4fa3f7;
+            text-decoration: none;
+    }
+
+    a.external-link:hover {
+            text-decoration: underline;
+            color: #7FBBF9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-left">
+      <img src="./images/main.png" alt="Logo">
+      <span>StegoShark</span>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="concepts.html">Concepts</a>
+      <a href="https://github.com/XYFrank103/StegoShark/releases">Download</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>What is Steganography?</h1>
+    <p>
+      <strong>
+        <a href="https://en.wikipedia.org/wiki/Steganography" class="external-link">
+          Steganography
+        </a>
+      </strong>is the science of hiding secret messages inside another larger and harmless-looking message. 
+      This technique goes a step beyond regular cryptography, which simply encrypts the message — steganography hides the existence of the message itself.
+    </p>
+
+    <p>
+      The hidden message may be embedded in an image, audio, video, or text file, resulting in a cover object that looks normal to the human eye or ear.
+    </p>
+
+    <p>Some common terms related to steganography include:</p>
+    <ul>
+      <li><strong>plaintext</strong>: The original secret message to be communicated.</li>
+      <li><strong>ciphertext</strong>: The encrypted version of the plaintext (optional).</li>
+      <li><strong>covertext</strong>: Innocent-looking data (image, audio, etc.) used to carry the secret.</li>
+      <li><strong>stegotext</strong>: The output after embedding the message inside the covertext.</li>
+    </ul>
+
+    <p>
+      The standard process is to first encrypt the plaintext to form ciphertext (optional but recommended), 
+      then embed that ciphertext into the covertext using a steganographic method. The result is the stegotext.
+      On the receiver's end, the hidden data is extracted and decrypted to retrieve the original plaintext.
+    </p>
+
+    <h2>What is a Digital Signature?</h2>
+    <p>
+      <strong>
+        <a href="https://en.wikipedia.org/wiki/Digital_signature" class="external-link">
+          Digital Signature
+        </a>
+      </strong>is a cryptographic method used to verify the authenticity and integrity of a message, file, or data. 
+      It serves as a digital fingerprint created using a private key and verified with a public key.
+    </p>
+
+    <p>
+      In StegoShark, digital signatures are used to:
+    </p>
+    <ul>
+      <li>Ensure that the hidden content has not been tampered with during transmission.</li>
+      <li>Prove that the content was embedded by a legitimate sender.</li>
+    </ul>
+
+    <p>
+      A digital signature helps ensure non-repudiation: the sender cannot deny having signed the data, 
+      and the receiver can confidently verify both the source and the integrity of the information.
+    </p>
+  </div>
+
+<footer>
+  StegoShark © 2025
+</footer>
+
+</body>
+</html>
