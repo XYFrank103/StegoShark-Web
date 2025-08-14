@@ -13,7 +13,7 @@ This is the official web portal for the StegoShark application, developed as par
 ## Access Points
 **Main application repository**: [GitHub](https://github.com/XYFrank103/StegoShark)
 
-**Homepage**: [Homepage](https://xyfrank103.github.io/StegoShark-Web/)
+**Offical Website**: [Homepage](https://www.stegoshark.org/)
 
 
 
@@ -22,4 +22,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 Zekai Yin (for academic coursework, PSB7030CE Cyber Security Individual Project)
+
 
