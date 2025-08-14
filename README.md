@@ -15,12 +15,8 @@ This is the official web portal for the StegoShark application, developed as par
 
 **Offical Website**: [Homepage](https://www.stegoshark.org/)
 
-
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Author
 Zekai Yin (for academic coursework, PSB7030CE Cyber Security Individual Project)
+
 
 
